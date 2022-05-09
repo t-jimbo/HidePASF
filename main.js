@@ -1,9 +1,13 @@
 const hideEob = () => {
   for (let i = 1; i < 10; i++) {
     const tgt = document.getElementById(`eob_${i}`);
-    const div = tgt.parentNode;
-    div.style.display = 'none';
-    div.parentNode.parentNode.parentNode.style.height = 'auto';
+    if (tgt) {
+      const idiv = tgt.parentNode;
+      idiv.style.display = 'none';
+      idiv.parentNode.parentNode.parentNode.style.height = 'auto';
+    } else {
+      return;
+    }
   }
 }
 
