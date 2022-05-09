@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Hide PASF",
+  "version": "0.0.1",
+  "description": "google検索の「他の人はこちらも検索」を非表示にします。",
+  "content_scripts": [{
+    "matches": ["https://www.google.com/search*"],
+    "js": ["main.js"]
+  }]
+}
