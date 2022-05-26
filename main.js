@@ -4,7 +4,7 @@ const hideEob = () => {
     if (tgt) {
       const idiv = tgt.parentNode;
       idiv.style.display = 'none';
-      idiv.parentNode.parentNode.parentNode.style.height = 'auto';
+      idiv.parentNode.parentNode.style.height = 'auto';
     } else {
       return;
     }
